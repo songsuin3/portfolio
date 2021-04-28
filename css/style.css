@@ -457,7 +457,7 @@ h1, h2, h3, h4, h5, h6 {
 #fh5co-intro {
   position: relative;
   bottom: 0;
-  margin-top: -150px;
+  margin-top: -160px;
   z-index: 10;
   padding-bottom: 7em;
 }
@@ -472,16 +472,19 @@ h1, h2, h3, h4, h5, h6 {
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
+    justify-content: center;
   flex-wrap: wrap;
   -webkit-flex-wrap: wrap;
   -moz-flex-wrap: wrap;
 }
 #fh5co-intro .fh5co-block {
-  width: 33.33%;
-  float: left;
+  width: 20vw;
+
+  float:left;
   text-align: center;
   font-size: 16px;
-  min-height: 300px;
+  min-height: 130px;
+    min-width: 200px;
   vertical-align: middle;
   padding: 40px;
   background: #fff;

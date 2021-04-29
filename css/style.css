@@ -390,12 +390,12 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #74b9ff;
   /* IE9, iOS 3.2+ */
   background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHZpZXdCb3g9IjAgMCAxIDEiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxsaW5lYXJHcmFkaWVudCBpZD0idnNnZyIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIHgxPSIwJSIgeTE9IjAlIiB4Mj0iMTAwJSIgeTI9IjEwMCUiPjxzdG9wIHN0b3AtY29sb3I9IiMzZjk1ZWEiIHN0b3Atb3BhY2l0eT0iMSIgb2Zmc2V0PSIwIi8+PHN0b3Agc3RvcC1jb2xvcj0iIzUyZDNhYSIgc3RvcC1vcGFjaXR5PSIxIiBvZmZzZXQ9IjEiLz48L2xpbmVhckdyYWRpZW50PjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9InVybCgjdnNnZykiIC8+PC9zdmc+);
-  background-image: -webkit-gradient(linear, 0% 0%, 100% 100%, color-stop(0, #ff98ef), color-stop(1, #3f95ea));
+  background-image: -webkit-gradient(linear, 0% 0%, 100% 100%, color-stop(0, #3f95ea), color-stop(1, #3f95ea));
   /* Android 2.3 */
-  background-image: -webkit-repeating-linear-gradient(top left, #ff98ef 0%, #3f95ea 100%);
+  background-image: -webkit-repeating-linear-gradient(top left, #3f95ea 0%, #3f95ea 100%);
   /* IE10+ */
-  background-image: repeating-linear-gradient(to bottom right, #ff98ef 0%, #3f95ea 100%);
-  background-image: -ms-repeating-linear-gradient(top left, #ff98ef 0%, #3f95ea 100%);
+  background-image: repeating-linear-gradient(to bottom right, #3f95ea 0%, #3f95ea 100%);
+  background-image: -ms-repeating-linear-gradient(top left, #3f95ea 0%, #3f95ea 100%);
 }
 #fh5co-home, #fh5co-home .text-wrap {
   height: 900px;
@@ -473,20 +473,20 @@ h1, h2, h3, h4, h5, h6 {
   display: -webkit-flex;
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
-  -webkit-flex-wrap: wrap;
-  -moz-flex-wrap: wrap;
+  flex-wrap:nowrap;
+  -webkit-flex-wrap: nowrap;
+  -moz-flex-wrap: nowrap;
 }
 #fh5co-intro .fh5co-block {
-  width: 20vw;
+  width: 15vw;
 
   float:left;
   text-align: center;
   font-size: 16px;
-  min-height: 130px;
+  min-height: 150px;
     min-width: 200px;
   vertical-align: middle;
-  padding: 40px;
+  padding: 30px;
   background: #fff;
   -webkit-box-shadow: 7px 14px 42px 3px rgba(163, 174, 184, 0.4);
   -moz-box-shadow: 7px 14px 42px 3px rgba(163, 174, 184, 0.4);
@@ -499,11 +499,27 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
   backgroun-repeat: no-repeat;
 }
+
+@media screen and (min-width: 769px) and (max-width:1068px){
+  #fh5co-intro .fh5co-block {
+    width: 50%;
+  }
+}
+
+
+
+
+
 @media screen and (max-width: 768px) {
   #fh5co-intro .fh5co-block {
     width: 100%;
   }
 }
+
+
+
+
+
 #fh5co-intro .fh5co-block > .overlay-darker {
   z-index: 8;
   opacity: .5;
@@ -562,6 +578,9 @@ h1, h2, h3, h4, h5, h6 {
   background: #3f95ea !important;
   border: 2px solid #3f95ea !important;
 }
+
+#fh5co-intro img {;text-align: center;display:inline-block;width: 50%;}
+#fh5co-intro .fh5co-block .fh5co-text a {padding: 3px 5px;margin-left: 5px;}
 
 .watch-video {
   text-align: center;
@@ -635,12 +654,12 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #3f95ea;
   /* IE9, iOS 3.2+ */
   background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHZpZXdCb3g9IjAgMCAxIDEiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxsaW5lYXJHcmFkaWVudCBpZD0idnNnZyIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIHgxPSIwJSIgeTE9IjAlIiB4Mj0iMTAwJSIgeTI9IjEwMCUiPjxzdG9wIHN0b3AtY29sb3I9IiMzZjk1ZWEiIHN0b3Atb3BhY2l0eT0iMSIgb2Zmc2V0PSIwIi8+PHN0b3Agc3RvcC1jb2xvcj0iIzUyZDNhYSIgc3RvcC1vcGFjaXR5PSIxIiBvZmZzZXQ9IjEiLz48L2xpbmVhckdyYWRpZW50PjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9InVybCgjdnNnZykiIC8+PC9zdmc+);
-  background-image: -webkit-gradient(linear, 0% 0%, 100% 100%, color-stop(0, #ff98ef), color-stop(1, #3f95ea));
+  background-image: -webkit-gradient(linear, 0% 0%, 100% 100%, color-stop(0, #3f95ea), color-stop(1, #3f95ea));
   /* Android 2.3 */
-  background-image: -webkit-repeating-linear-gradient(top left, #ff98ef 0%, #3f95ea 100%);
+  background-image: -webkit-repeating-linear-gradient(top left, #3f95ea 0%, #3f95ea 100%);
   /* IE10+ */
-  background-image: repeating-linear-gradient(to bottom right, #ff98ef 0%, #3f95ea 100%);
-  background-image: -ms-repeating-linear-gradient(top left, #ff98ef 0%, #3f95ea 100%);
+  background-image: repeating-linear-gradient(to bottom right, #3f95ea 0%, #3f95ea 100%);
+  background-image: -ms-repeating-linear-gradient(top left, #3f95ea 0%, #3f95ea 100%);
   overflow: hidden;
   position: relative;
   color: rgba(255, 255, 255, 0.7);
@@ -868,12 +887,12 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #3f95ea;
   /* IE9, iOS 3.2+ */
   background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHZpZXdCb3g9IjAgMCAxIDEiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxsaW5lYXJHcmFkaWVudCBpZD0idnNnZyIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIHgxPSIwJSIgeTE9IjAlIiB4Mj0iMTAwJSIgeTI9IjEwMCUiPjxzdG9wIHN0b3AtY29sb3I9IiMzZjk1ZWEiIHN0b3Atb3BhY2l0eT0iMSIgb2Zmc2V0PSIwIi8+PHN0b3Agc3RvcC1jb2xvcj0iIzUyZDNhYSIgc3RvcC1vcGFjaXR5PSIxIiBvZmZzZXQ9IjEiLz48L2xpbmVhckdyYWRpZW50PjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9InVybCgjdnNnZykiIC8+PC9zdmc+);
-  background-image: -webkit-gradient(linear, 0% 0%, 100% 100%, color-stop(0, #ff98ef), color-stop(1, #3f95ea));
+  background-image: -webkit-gradient(linear, 0% 0%, 100% 100%, color-stop(0, #3f95ea), color-stop(1, #3f95ea));
   /* Android 2.3 */
-  background-image: -webkit-repeating-linear-gradient(top left, #ff98ef 0%, #3f95ea 100%);
+  background-image: -webkit-repeating-linear-gradient(top left, #3f95ea 0%, #3f95ea 100%);
   /* IE10+ */
-  background-image: repeating-linear-gradient(to bottom right, #ff98ef 0%, #3f95ea 100%);
-  background-image: -ms-repeating-linear-gradient(top left, #ff98ef 0%, #3f95ea 100%);
+  background-image: repeating-linear-gradient(to bottom right, #3f95ea 0%, #3f95ea 100%);
+  background-image: -ms-repeating-linear-gradient(top left, #3f95ea 0%, #3f95ea 100%);
 }
 #fh5co-work a {
   color: rgba(255, 255, 255, 0.5);
@@ -941,6 +960,8 @@ h1, h2, h3, h4, h5, h6 {
 #fh5co-work .fh5co-project-item .fh5co-text {
   padding: 10px 20px;
 }
+
+
 #fh5co-work .fh5co-project-item .fh5co-text h2, #fh5co-work .fh5co-project-item .fh5co-text span {
   text-decoration: none !important;
 }

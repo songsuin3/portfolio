@@ -245,10 +245,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 #fh5co-header #navbar li a {
   font-family: "Source Sans Pro", Arial, sans-serif;
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(0, 109, 177, 0.7);
   position: relative;
-  font-size: 19px;
-  font-weight: 300;
+  font-size: 20px;
+  font-weight: 500;
+    text-shadow: 5px,5px,15px,rgba(0,0,0,0.5);
+     font-weight: bold;
 }
 #fh5co-header #navbar li a span {
   position: relative;
@@ -277,6 +279,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 #fh5co-header #navbar li a:hover {
   color: #fff;
+   
 }
 #fh5co-header #navbar li a:hover span:before {
   visibility: visible;
@@ -299,8 +302,8 @@ h1, h2, h3, h4, h5, h6 {
 #fh5co-header .navbar-brand {
   float: left;
   display: block;
-  font-size: 30px;
-  font-weight: 700;
+  font-size: 50px;
+  font-weight:900;
   padding-left: 0;
   color: #fff;
 }
@@ -398,7 +401,7 @@ h1, h2, h3, h4, h5, h6 {
   background-image: -ms-repeating-linear-gradient(top left, #3f95ea 0%, #3f95ea 100%);
 }
 #fh5co-home, #fh5co-home .text-wrap {
-  height: 900px;
+  height: 800px;
 }
 #fh5co-home .text-wrap {
   display: table;
@@ -423,17 +426,22 @@ h1, h2, h3, h4, h5, h6 {
   color: white;
   border-bottom: 1px dashed white;
 }
+#fh5co-home .text-inner .row {position: absolute;top: 35%;left: 50%;transform: translateX(-50%);width: 100%;}
+
 #fh5co-home .text-inner h1 {
   font-size: 50px;
+    font-weight: 500;
   color: white;
   margin: 0 0 20px 0;
+  text-shadow:4px 4px 10px rgba(0,0,0,0.3) 
 }
 #fh5co-home .text-inner h2 {
   font-size: 28px;
-  line-height: 38px;
-  font-weight: 300;
-  color: rgba(255, 255, 255, 0.8);
+  line-height: 20px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.9);
   margin: 0;
+  text-shadow:3px 3px 10px rgba(0,0,0,0.3);
 }
 
 .slant {
@@ -579,7 +587,7 @@ h1, h2, h3, h4, h5, h6 {
   border: 2px solid #3f95ea !important;
 }
 
-#fh5co-intro img {;text-align: center;display:inline-block;width: 50%;}
+#fh5co-intro img {;text-align: center;display:inline-block;width: 80%;;}
 #fh5co-intro .fh5co-block .fh5co-text a {padding: 3px 5px;margin-left: 5px;}
 
 .watch-video {
